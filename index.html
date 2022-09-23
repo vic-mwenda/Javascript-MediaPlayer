@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media-player</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+   <div class="music-player">
+     <audio src="" id="audio"></audio>
+     <h1 class="music-name"></h1>
+
+     <p class="artist-name"></p>
+     <div class="disk"></div>
+
+     <div class="song-slider">
+       <label for="seek-bar"></label>
+       <input type="range" id="seek-bar" value="0" class="seek-bar">
+         <span class="current-time">00:00</span>
+         <span class="song-duration">00:00</span>
+       </div>
+
+     <div class="controls">
+       <button class="btn backward-btn"></button>
+       <button class="play-btn pause">
+         <span></span>
+         <span></span>
+       </button>
+       <button class="btn forward-btn">
+       </button>
+     </div>
+   </div>
+
+
+</body>
+<script src="app.js"></script>
+<script src="data.js"></script>
+</html>
