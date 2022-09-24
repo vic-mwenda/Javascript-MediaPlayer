@@ -46,10 +46,13 @@ const formatTime = (time) => {
 playBtn.addEventListener('click' , () => {
   if (playBtn.className.includes('pause')){
     music.play();
+    playBtn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>'
+
   } else {
     music.pause();
+    playBtn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>'
+
   }
-  playBtn.classList.toggle('pause')
   disk.classList.toggle('play')
 
   }
